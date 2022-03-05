@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  color: black;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5, h6 {
+  font-size: 1rem;
+}
+
+p, nav {
+  font-weight: normal;
+}
+
+p {
+  font-size: 0.85rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.75em;
+}
+
+main section,
+main aside {
+  flex: 200px;
+}
+
+main > section {
+  padding-right: 1.75em;
+}
+
+main > aside {
+  flex-grow: inherit;
+  min-width: 400px;
+}
+
+main > section h2::after {
+  content: ' →';
+}
+
+main > section > p::first-line {
+  color: blue;
+}
+
+nav.nav-menu ul {
+  padding: 0;
+}
+
+nav.nav-menu ul li {
+  list-style: none;
+  display: inline;
+}
+
+nav.nav-menu ul li ~ li {
+  margin-left: 1em;
+}
+
+#header-main {
+  background-color: aliceblue;
+  padding: 1em 1.75em;
+}
+
+nav.nav-menu ul > li a:link { color: blue; }
+nav.nav-menu ul > li a:visited { color: purple; }
+nav.nav-menu ul > li a:hover { background: yellow; }
+nav.nav-menu ul > li a:active { color: red; }
+
+#footer-main {
+  background-color:bisque;
+  padding: 0.5em 1em;
+}
+
+@media (max-width: 1024px) {
+  main > aside {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    display: block;
+  }
+}
+
+form section {
+  border: 1px solid black;
+  padding: 0.75em 1em;
+}
+
+form > section ~ section {
+  margin-top: 1em;
+}
+
+form section:first-of-type {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+}
+
+form section:last-of-type {
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+
+#payment-form fieldset {
+  border-radius: 0.3em;
+}
+
+#payment-form fieldset ul {
+  list-style: none;
+}
+#payment-form label {
+  margin-right: 2em;
+}
+
+#payment-form fieldset li [type=radio] {
+  margin-right: 1em;
+}
+
+#messenger {
+  display: flex;
+  justify-content: center;
+}
+
+#messenger section.chat {
+  background: black;
+  width: 200px;
+  padding: 0.5em;
+}
+
+#messenger section.chat h2 {
+  color: white;
+}
+
+#messenger section.chat .message {
+  display: flex;
+}
+
+#messenger section.chat .message.sender {
+  float: right;
+}
+
+#messenger section.chat .message .bubbles .bubble{
+  padding: 0.5em;
+  border-radius: 0.25em;
+}
+
+#messenger section.chat .message.sender .bubbles .bubble{
+  background-color: orange;
+}
+
+#messenger section.chat .message.responder .bubbles .bubble{
+  background-color: yellow;
+}
+
+#messenger section.chat .message .bubbles h3.name{
+  color: white;
+  font-size: 0.75em;
+}
+
+#messenger section.chat .message.sender .bubbles h3.name{
+  text-align: right;
+}
+
+
+
+
